@@ -58,7 +58,7 @@ const FeaturedSection = () => {
   ];
 
   return (
-    <div className="py-16 px-6 bg-gray-900">
+    <div className="py-16 px-6 bg-black">
       <div className="max-w-7xl mx-auto">
         {/* Featured Tracks */}
         <section className="mb-16">

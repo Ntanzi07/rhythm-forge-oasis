@@ -9,7 +9,90 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          bio: string | null
+          created_at: string
+          full_name: string | null
+          id: string
+          updated_at: string
+          username: string | null
+        }
+        Insert: {
+          avatar_url?: string | null
+          bio?: string | null
+          created_at?: string
+          full_name?: string | null
+          id: string
+          updated_at?: string
+          username?: string | null
+        }
+        Update: {
+          avatar_url?: string | null
+          bio?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          updated_at?: string
+          username?: string | null
+        }
+        Relationships: []
+      }
+      tracks: {
+        Row: {
+          album: string | null
+          artist_name: string
+          audio_url: string | null
+          cover_art_url: string | null
+          created_at: string
+          description: string | null
+          duration: number | null
+          file_size: number | null
+          genre: string | null
+          id: string
+          is_public: boolean | null
+          play_count: number | null
+          title: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          album?: string | null
+          artist_name: string
+          audio_url?: string | null
+          cover_art_url?: string | null
+          created_at?: string
+          description?: string | null
+          duration?: number | null
+          file_size?: number | null
+          genre?: string | null
+          id?: string
+          is_public?: boolean | null
+          play_count?: number | null
+          title: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          album?: string | null
+          artist_name?: string
+          audio_url?: string | null
+          cover_art_url?: string | null
+          created_at?: string
+          description?: string | null
+          duration?: number | null
+          file_size?: number | null
+          genre?: string | null
+          id?: string
+          is_public?: boolean | null
+          play_count?: number | null
+          title?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

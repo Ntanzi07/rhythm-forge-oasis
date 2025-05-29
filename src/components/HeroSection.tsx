@@ -1,10 +1,11 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 py-20 px-6 overflow-hidden">
+    <section className="relative bg-black py-20 px-6 overflow-hidden">
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
       <div className="relative max-w-7xl mx-auto text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
@@ -17,9 +18,11 @@ const HeroSection = () => {
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-3">
             Start Listening
           </Button>
-          <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-900 hover:text-white text-lg px-8 py-3">
-            Upload Your Music
-          </Button>
+          <Link to="/upload">
+            <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-900 hover:text-white text-lg px-8 py-3">
+              Upload Your Music
+            </Button>
+          </Link>
         </div>
       </div>
       
