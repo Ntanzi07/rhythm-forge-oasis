@@ -49,6 +49,12 @@ const Header = () => {
                   Upload
                 </Button>
               </Link>
+              <Link to="/profile">
+                <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white hover:bg-gray-900">
+                  <User className="w-4 h-4 mr-2" />
+                  Profile
+                </Button>
+              </Link>
               <Button 
                 variant="ghost" 
                 size="sm" 
